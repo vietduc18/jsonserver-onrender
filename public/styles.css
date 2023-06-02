@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.form-search {
+  background-color: #fff;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-search i {
+  padding: 0.375rem 0.75rem;
+}
+
+.navbar-user {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 10px;
+}
+.navbar-cart {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.section-product {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-header {
+  margin-bottom: 50px;
+}
+
+.product:hover {
+  border: 1px solid #333;
+}
+
+.product:hover .product-title {
+  color: #0d6efd;
+}
+
+.carousel-btn {
+  position: absolute;
+  transform: translateY(-555%);
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.owl-nav {
+  cursor: pointer;
+}
+
+.carousel-btn-next {
+  right: -30px;
+}
+
+.carousel-btn-prev {
+  left: -30px;
+}
+
+.banner-p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.section-banner:hover .banner-title {
+  color: #0d6efd;
+}
+
+.glide__arrow--left {
+  left: -1em !important;
+}
+
+.glide__arrow--right {
+  right: -1em !important;
+}
+
+.h2_footer {
+  color: #fff;
+}
+
+.footer-logo img {
+  width: 33%;
+}
+
+.social {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.social ul li {
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.social ul li img {
+  width: 33px;
+}
+
+.links {
+  margin: auto;
+  padding: 0px;
+  line-height: 2;
+  margin: 21px 0px;
+  list-style-type: none;
+}
+
+.links li a {
+  color: #fff;
+  padding: 7px 0px;
+  text-decoration: none;
+}
+
+.contacts-info address {
+  display: block;
+  margin: auto;
+  line-height: 1.6;
+  color: #fff;
+  padding-top: 5px;
+  margin-top: 15px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+
+.phone-footer {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

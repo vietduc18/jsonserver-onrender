@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+      integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css"
+      integrity="sha512-8vDOoSF7kZUYkn7BiQulRCTvpRoenljlkQDZhM6+IqDJi5jHDH9QEYH9NfMBB8LlqiYc7O17YGxbGx7dOxKrpw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DUC SPORT</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./img/348358245_266753209099574_7887288500838937974_n.png"
+              alt="Logo"
+              width="100"
+              height="64"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >TRANG CHỦ</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GIÀY BÓNG ĐÁ
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">SÂN NHÂN TẠO</a></li>
+                  <li><a class="dropdown-item" href="#">SÂN TỰ NHIÊN</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">SÂN FUTSAL</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  THƯƠNG HIỆU
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">NIKE</a></li>
+                  <li><a class="dropdown-item" href="#">ADIDAS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">PUMA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MIZUNO</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">KAMITO</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">LIÊN HỆ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">TƯ VẤN</a>
+              </li>
+            </ul>
+            <form class="form-search d-flex" role="search">
+              <input
+                class="form-input"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Search"
+              />
+              <i class="bi bi-search"></i>
+            </form>
+            <a class="navbar-user d-none d-md-block" href="#"
+              ><i class="bi bi-person-circle"></i
+            ></a>
+            <a class="navbar-cart d-none d-md-block" href="#"
+              ><i class="bi bi-cart4"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <section class="section section-cart mt-5 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Begin empty cart -->
+              <h1>Shopping Cart</h1>
+
+              <div class="shopping-cart-empty">
+                <img src="./img/cart-empty.png" alt="" />
+                <h3>Không có gì trong giỏ hàng</h3>
+              </div>
+              <table class="shopping-cart">
+                <thead class="shopping-cart-columns">
+                  <tr>
+                    <th>Thumbnail</th>
+                    <th>Info</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody class="cart-items">
+                  <tr class="cart-item">
+                    <td>
+                      <div class="product-thumbnail">
+                        <img src="./img/pr1.webp" alt="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <div class="product-title">Product 1</div>
+                        <div class="product-price">1000</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-quantity">
+                        <button class="btn-down">Down</button>
+                        <span class="quantity">1</span>
+                        <button class="btn-up">Up</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-item-price">1000</div>
+                    </td>
+                    <td>
+                      <div class="cart-item-actions">
+                        <button>Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="cart-item">
+                    <td>
+                      <div class="product-thumbnail">
+                        <img src="./img/pr3.webp" alt="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <div class="product-title">Product 2</div>
+                        <div class="product-price">500</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-quantity">
+                        <button class="btn-down">Down</button>
+                        <span class="quantity">2</span>
+                        <button class="btn-up">Up</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-item-price">1000</div>
+                    </td>
+                    <td>
+                      <div class="cart-item-actions">
+                        <button>Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="cart-item">
+                    <td>
+                      <div class="product-thumbnail">
+                        <img src="./img/pr4.webp" alt="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <div class="product-title">Product 3</div>
+                        <div class="product-price">2000</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-quantity">
+                        <button class="btn-down">Down</button>
+                        <span class="quantity">1</span>
+                        <button class="btn-up">Up</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-item-price">2000</div>
+                    </td>
+                    <td>
+                      <div class="cart-item-actions">
+                        <button>Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr class="cart-item">
+                    <td>
+                      <div class="product-thumbnail">
+                        <img src="./img/pr7.webp" alt="" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <div class="product-title">Product 4</div>
+                        <div class="product-price">1500</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="product-quantity">
+                        <button class="btn-down">Down</button>
+                        <span class="quantity">2</span>
+                        <button class="btn-up">Up</button>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cart-item-price">3000</div>
+                    </td>
+                    <td>
+                      <div class="cart-item-actions">
+                        <button>Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <td colspan="2">Total</td>
+                    <td class="total-quantity">4</td>
+                    <td class="total-price">4000</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <!-- End cart -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer bg-primary p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 col-12">
+              <h2 class="h2_footer">Về chúng tôi</h2>
+              <span class="sp_footer"></span>
+              <div class="footer-logo">
+                <a class="logo" href="//soccerbeck.vn">
+                  <img
+                    class="lazyload img-responsive loaded"
+                    src="./img/348358245_266753209099574_7887288500838937974_n.png"
+                    data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/logo_footer.png?1685587533867"
+                    alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                    data-was-processed="true"
+                  />
+                </a>
+              </div>
+              <div class="social pull-right">
+                <ul class="link p-0">
+                  <li class="fb pull-left">
+                    <a
+                      href="https://www.facebook.com/becksport.shop/"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/facebookico.png?1685587533867"
+                        alt="Facebook"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="tw pull-left">
+                    <a href="https://shopee.vn/soccerbeck" target="_blank">
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/shoppeeico.png?1685587533867"
+                        alt="Shopee"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="youtube pull-left">
+                    <a
+                      href="https://www.tiktok.com/@giaybongda.becksport"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/tiktokico.png?1685587533867"
+                        alt="Tiktok"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="youtube pull-left">
+                    <a
+                      href="http://www.zalo.me/2819253689128987657"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/zaloico.png?1685587533867"
+                        alt="Tiktok"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a href="http://online.gov.vn/Home/WebDetails/67773">
+                  <img
+                    style="margin-top: 10px"
+                    class="lazyload img-responsive loaded"
+                    src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/bct.png?1685587533867"
+                    data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/bct.png?1685587533867"
+                    alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                    data-was-processed="true"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-12">
+              <h2 class="h2_footer">Thông tin</h2>
+              <span class="sp_footer"></span>
+              <ul class="links">
+                <li>
+                  <a href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>
+                </li>
+
+                <li>
+                  <a href="/chinh-sach-van-chuyen-giao-nhan"
+                    >Chính sách giao nhận</a
+                  >
+                </li>
+
+                <li><a href="/doi-tra-va-bao-hanh">Chính sách đổi trả</a></li>
+
+                <li><a href="/bao-hanh">Chính sách bảo hành</a></li>
+
+                <li><a href="/chinh-sach">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 col-12">
+              <h2 class="h2_footer">Bản đồ</h2>
+              <span class="sp_footer"></span>
+
+              <a
+                style="display: block"
+                target="_blank"
+                href="https://g.page/becksport-shop"
+              >
+                <img
+                  class="lazyload img-responsive loaded"
+                  src="./img/bando.jpg"
+                  data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/img-bando.jpg?1685587533867"
+                  alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3 col-12">
+              <h2 class="h2_footer">Liên hệ</h2>
+              <span class="sp_footer"></span>
+              <div class="contacts-info">
+                <address>
+                  <span style="color: #fff" class="bi bi-geo-alt-fill"></span>
+                  &nbsp;HÀ NỘI
+                </address>
+                <div class="phone-footer">
+                  <span style="color: #fff" class="bi bi-telephone"></span>
+                  &nbsp;Hotline free: 1900 8198
+                </div>
+                <div class="phone-footer">
+                  <img
+                    src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/zalo.png?1685587533867"
+                  />
+                  &nbsp;Zalo bán lẻ: 0123456789
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"
+      integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="cart.js"></script>
+  </body>
+</html>

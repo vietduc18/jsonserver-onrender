@@ -213,3 +213,18 @@ ul.inline li {
 .tag-item:hover {
   opacity: 0.5;
 }
+
+.col-left {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  height: 500px;
+}
+
+.main-carousel {
+  width: 20%;
+}
+
+.thumbnail-carousel {
+  width: 75%;
+}

@@ -4,6 +4,12 @@
   box-sizing: 0;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-search {
   background-color: #fff;
   align-items: center;
@@ -49,8 +55,12 @@
   margin-bottom: 50px;
 }
 
+.glide__slide:hover .product-title {
+  color: #0d6efd;
+}
+
 .product:hover {
-  border: 1px solid #333;
+  border: #333;
 }
 
 .product:hover .product-title {

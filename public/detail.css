@@ -1,0 +1,215 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-detail {
+  flex: 1;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.breacrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.breacrumb li {
+  text-align: center;
+}
+
+.breacrumb li a:hover,
+.breacrumb li > span:hover {
+  color: #0d6efd;
+}
+
+.breacrumb li a,
+.breacrumb li > span {
+  padding: 0px 5px;
+  font-weight: 300;
+  color: #666;
+}
+
+.sp-ar {
+  margin: 0 10px;
+  color: #666;
+}
+
+.product-title h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.product-price {
+  margin-bottom: 12px;
+}
+
+.product-price span {
+  font-size: 21px;
+  color: #f23f2f;
+  vertical-align: middle;
+}
+
+.product-vairant p {
+  font-size: 13px;
+  color: #666;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.popup-huong-dan-chon-size a {
+  color: #333;
+  font-style: italic;
+}
+
+.hangcosan {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  padding: 5px 5px;
+  width: auto;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.select-size {
+  margin: 0.5em 0;
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.sizes {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.size-item {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-size {
+  font-weight: bold;
+  clear: both;
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-size a {
+  color: #fff;
+  background: #333;
+  padding: 3px 5px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.soluong {
+  margin-bottom: 20px;
+}
+
+.soluong .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.input {
+  padding: 0 5px 1px;
+  height: 38px;
+  border: 1px #ddd solid;
+  text-align: center;
+  margin-right: 3px;
+  width: 75px;
+  vertical-align: top;
+}
+
+.soluong .btn {
+  background-color: #f5f5f5;
+}
+
+.soluong .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.box-buy {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.buynow {
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+.addtocart {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 10px;
+}
+
+.buynow:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.addtocart:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tag {
+  font-weight: 700;
+}
+
+.tag-list {
+  display: flex;
+  margin-right: 10px;
+}
+
+.tag-item {
+  font-size: 10px;
+  margin-right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.tag-item:hover {
+  opacity: 0.5;
+}

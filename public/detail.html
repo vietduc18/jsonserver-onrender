@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="detail.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,19 +19,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
-      integrity="sha512-tYKqO78H3mRRCHa75fms1gBvGlANz0JxjN6fVrMBvWL+vOOy200npwJ69OBl9XEsTu3yVUvZNrdWFIIrIf8FLg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Optional Theme Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css"
-      integrity="sha512-8vDOoSF7kZUYkn7BiQulRCTvpRoenljlkQDZhM6+IqDJi5jHDH9QEYH9NfMBB8LlqiYc7O17YGxbGx7dOxKrpw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <title>DUC SPORT</title>
   </head>
@@ -125,77 +114,153 @@
             <a class="navbar-user d-none d-md-block" href="login.html"
               ><i class="bi bi-person-circle"></i
             ></a>
-            <a class="navbar-cart d-none d-md-block" href=""
+            <a class="navbar-cart d-none d-md-block" href="cart.html"
               ><i class="bi bi-cart4"></i
             ></a>
           </div>
         </div>
       </nav>
-      <section class="section section-cart mt-5 mb-5">
+      <section class="section section-detail">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-12">
-              <!-- Begin empty cart -->
-              <h1 class="title">Giỏ hàng</h1>
-
-              <div class="shopping-cart-empty">
-                <h5>Không có sản phẩm nào trong giỏ hàng!</h5>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <ul class="breacrumb">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <span class="sp-ar">|</span>
+                    <li><span>tên sản phẩm</span></li>
+                  </ul>
+                </div>
               </div>
-
-              <table class="shopping-cart">
-                <thead class="shopping-cart-columns">
-                  <tr>
-                    <th></th>
-                    <th>Thông tin sản phẩm</th>
-                    <th>Số Lượng</th>
-                    <th>Giá tiền</th>
-                  </tr>
-                </thead>
-
-                <tbody class="cart-items">
-                  <tr class="cart-item">
-                    <td>
-                      <div class="product-thumbnail">
-                        <img src="./img/pr1.webp" alt="" />
-                      </div>
-                    </td>
-                    <td>
-                      <div class="product-info">
-                        <div class="product-title">
-                          Nike Air Zoom Mercurial Vapor 15 Pro TF Luminous -
-                          Pink Blast/Volt/Gridiron
+            </div>
+            <div class="col-12">
+              <div class="wrapper-detail p-4">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <!-- Slider main container -->
+                    <div class="swiper main-carousel">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide1.webp" alt="" />
                         </div>
-                        <div class="product-price">1000</div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslid2.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide3.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide4.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide5.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide6.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide7.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide10.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide9.webp" alt="" />
+                        </div>
                       </div>
-                    </td>
-                    <td>
-                      <div class="product-quantity">
-                        <button class="btn btn-down">-</button>
-                        <span class="quantity">1</span>
-                        <button class="btn btn-up">+</button>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="cart-item-price">1000</div>
-                    </td>
-                    <td>
-                      <div class="cart-item-actions">
-                        <button>Xóa</button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
 
-                <tfoot>
-                  <tr>
-                    <td colspan="2"></td>
-                    <td class="total-quantity">4</td>
-                    <td class="total-price">4000</td>
-                    <td></td>
-                  </tr>
-                </tfoot>
-              </table>
-              <!-- End cart -->
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper thumbnail-carousel">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide1.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslid2.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide3.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide4.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide5.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide6.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide7.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide10.webp" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/detailslide9.webp" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <div class="product-title">
+                      <h1>
+                        Mizuno Morelia Neo III Beta Elite FG Azure Blue -
+                        Blue/White/Copper
+                      </h1>
+                    </div>
+                    <div class="product-price" id="price-preview">
+                      <span>4,800,000₫</span>
+                    </div>
+                    <div class="product-vairant">
+                      <p style="margin: 0">Nhà cung cấp: MIZUNO</p>
+                      <p id="pro_sku">SKU: P1GA239125-40</p>
+                    </div>
+                    <div class="hangcosan">Hàng có sẵn</div>
+                    <div class="product-size">
+                      <div class="select-size">Chọn size:</div>
+                      <div class="sizes">
+                        <span class="size-item active">38</span>
+                        <span class="size-item">39</span>
+                        <span class="size-item">40</span>
+                        <span class="size-item">41</span>
+                        <span class="size-item">42</span>
+                      </div>
+                    </div>
+                    <div class="btn-size">
+                      <a href="">Hướng dẫn chọn size</a>
+                    </div>
+                    <div class="soluong">
+                      <div class="title">Chọn số lượng</div>
+                      <button class="btn btn-down">-</button>
+                      <input type="text" class="input" value="1" />
+                      <button class="btn btn-up">+</button>
+                    </div>
+                    <div class="box-buy">
+                      <div class="buynow">Mua ngay</div>
+                      <div class="addtocart">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="tag">#tags:</div>
+                    <div class="tag-list">
+                      <div class="tag-item">Nike</div>
+                      <div class="tag-item">Adidas</div>
+                      <div class="tag-item">Mizuno</div>
+                      <div class="tag-item">Giá rẻ</div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-3"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -203,7 +268,7 @@
       <footer class="footer bg-primary p-4">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Về chúng tôi</h2>
               <span class="sp_footer"></span>
               <div class="footer-logo">
@@ -278,7 +343,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Thông tin</h2>
               <span class="sp_footer"></span>
               <ul class="links">
@@ -299,7 +364,7 @@
                 <li><a href="/chinh-sach">Chính sách bảo mật</a></li>
               </ul>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Bản đồ</h2>
               <span class="sp_footer"></span>
 
@@ -317,7 +382,7 @@
                 />
               </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Liên hệ</h2>
               <span class="sp_footer"></span>
               <div class="contacts-info">
@@ -342,17 +407,13 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"
-      integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="cart.js"></script>
+
+    <script src="detail.js"></script>
   </body>
 </html>

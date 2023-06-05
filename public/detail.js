@@ -1,4 +1,4 @@
-const thumbnail = new Swiper(".main-carousel", {
+const thumbnail = new Swiper(".thumbnail-carousel", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 5,
@@ -20,7 +20,7 @@ const thumbnail = new Swiper(".main-carousel", {
   },
 });
 
-const largeImg = new Swiper(".thumbnail-carousel", {
+const largeImg = new Swiper(".main-carousel", {
   // Optional parameters
   direction: "horizontal",
   // Navigation arrows

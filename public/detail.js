@@ -32,3 +32,34 @@ const largeImg = new Swiper(".main-carousel", {
     swiper: thumbnail,
   },
 });
+
+const sizeItem = document.querySelectorAll(".size-item");
+
+sizeItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Xóa class "active-size" khỏi tất cả các phần tử ".size-item"
+    sizeItem.forEach((item) => {
+      item.classList.remove("active-size");
+    });
+
+    // Thêm class "active-size" vào phần tử được nhấp vào
+    item.classList.add("active-size");
+  });
+});
+
+const inputEl = document.querySelector(".input");
+const btnDown = document.querySelector(".btn-down");
+const btnUp = document.querySelector(".btn-up");
+
+let value = 1;
+btnDown.addEventListener("click", () => {
+  if (value > 1) {
+    value--;
+  }
+  inputEl.value = value;
+});
+
+btnUp.addEventListener("click", () => {
+  value++;
+  inputEl.value = value;
+});

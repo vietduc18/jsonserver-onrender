@@ -103,3 +103,7 @@
 .icon-field .bi {
   color: #333;
 }
+
+.Success {
+  display: none;
+}

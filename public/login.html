@@ -40,11 +40,12 @@
         <div class="container">
           <a class="navbar-brand" href="index.html"
             ><img
-              src="./img/348358245_266753209099574_7887288500838937974_n.png"
+              src="./img/logo-removebg-preview.png"
               alt="Logo"
               width="100"
               height="64"
-              class="d-inline-block align-text-top"
+              class="d-inline-block align-text-top img-fluid"
+              style="width: 80px"
           /></a>
           <button
             class="navbar-toggler border-light"
@@ -122,7 +123,7 @@
               />
               <i class="bi bi-search"></i>
             </form>
-            <a class="navbar-user d-none d-md-block" href="#"
+            <a class="navbar-user d-none d-md-block" href="login.html"
               ><i class="bi bi-person-circle"></i
             ></a>
             <a class="navbar-cart d-none d-md-block" href="cart.html"
@@ -188,7 +189,7 @@
                 <div class="req_pass">
                   <a href="#">Quên mật khẩu?</a>
 
-                  hoặc <a href="/account/register" title="Đăng ký">Đăng ký</a>
+                  hoặc <a href="singup.html" title="Đăng ký">Đăng ký</a>
                 </div>
 
                 <input
@@ -198,131 +199,22 @@
                   value="03AL8dmw8p-ySZxiuNQ5ndHm3KQzvSyOfci3j1tcf2gkE9BGYmRCjfzTO6eC1Nn6_BtIHc5N1pg8PnPaKScswm9dSJzky7aJ-AidpBku1s5VxP0iqaWhhAksPTX2HOexY0Wsb1iQuKiFgGPfE4VtmUyke9YlQz34tpknz5s_fiEiCmUu94D779Pusi2C7_7dMmv5ysq0ijiInsoqq80VdHPZGk0cGRitQD2pLlVN2owe34TKpwKclalFY_T1H9g_V85jEtFNzFkbAfx0RIu_OwacHZtmEQO5p0FxS4Z5u5NTQs3GS2pWPGru_g87AM3fhgbjbdkY0WMHmahDnsUToXYaAIr83H8YbiLo9izMLFEvtKHK3gmkYkN-mr0MR5APWdoQPyzG--PeeZb_viLaG4fbDTPPcWicESZxVhrk8YqZTv6AdkgPlP7cWw2P6dKflBatsFqicbPWESbg0pQO3imEZUz1gJnSS9WKgM_hO5nGSzh5SpLRFTuFPKpQ4MjmUIK0Fo7UxmUcDPH6mziPrO4Ckx9nODT7eN2g"
                 />
               </form>
+              <h1 class="Success">Bạn đã đăng nhập thành công</h1>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="maincontent" class="clearfix container">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="layout-page">
-          <span class="header-contact header-page clearfix">
-            <h1>Đăng Ký</h1>
-          </span>
-
-          <div class="userbox">
-            <form
-              accept-charset="UTF-8"
-              action="/account"
-              id="create_customer"
-              method="post"
-            >
-              <input name="form_type" type="hidden" value="create_customer" />
-              <input name="utf8" type="hidden" value="✓" />
-
-              <div id="first_name" class="clearfix large_form">
-                <label for="first_name" class="label icon-field"
-                  ><i class="bi bi-person"></i
-                ></label>
-                <input
-                  required=""
-                  type="text"
-                  value=""
-                  name="customer[first_name]"
-                  placeholder="Họ"
-                  id="first_name"
-                  class="text"
-                  size="30"
-                />
-              </div>
-              <div id="last_name" class="clearfix large_form">
-                <label for="last_name" class="label icon-field"
-                  ><i class="bi bi-person"></i
-                ></label>
-                <input
-                  required=""
-                  type="text"
-                  value=""
-                  name="customer[last_name]"
-                  placeholder="Tên"
-                  id="last_name"
-                  class="text"
-                  size="30"
-                />
-              </div>
-
-              <div id="email" class="clearfix large_form">
-                <label for="email" class="label icon-field"
-                  ><i class="bi bi-envelope"></i
-                ></label>
-                <input
-                  required=""
-                  type="email"
-                  value=""
-                  placeholder="Email"
-                  name="customer[email]"
-                  id="email"
-                  class="text"
-                  size="30"
-                />
-              </div>
-
-              <div id="password" class="clearfix large_form">
-                <label for="password" class="label icon-field"
-                  ><i class="bi bi-lock"></i
-                ></label>
-                <input
-                  required=""
-                  type="password"
-                  value=""
-                  placeholder="Mật khẩu"
-                  name="customer[password]"
-                  id="password"
-                  class="password text"
-                  size="30"
-                />
-              </div>
-
-              <div class="action_bottom">
-                <input class="btn-signin" type="submit" value="Đăng ký" />
-              </div>
-              <div class="req_pass">
-                <a class="come-back" href="/account/login">Quay về</a>
-              </div>
-
-              <input
-                id="a4a5ddc4819e4e09ab773f66c3c71a2d"
-                name="g-recaptcha-response"
-                type="hidden"
-                value="03AL8dmw_slTB_D4t4phNDedMNMJ84QDuh-8oRUC5hUtj7TJkut8z2m8yIvbulTwq1jjhDNoLWI8cPj5KpMuFf-kE0-ihW2C6G3lA_4vS8fO25cwE00OrVz-c2m1HauGIxafGVBy7WuaOSGdCfg4Ophn8PHvvynZ6dqq42p7-OJVcX5p-al6e2jHUVRSeGGTEVGgosFTyezYagEelFY1hJJkcuBeU0N52UEDCsKLDhUsXIXc6NtL-8CoCM1GvXteuV0mRcS0F6yVeoM-ZBFZbfIhEQtctlUi4TsubiZ_KY2FcoV1JoS-GU2L3yOIdjVl_ds5b7h9JZO7cRPN0kdDl_28zYZ5HlGJlRFhyg6KAopooZBMYRoLyerxohrM8unYX1cFhejmk9hp4x8M5Xh8yhqly8YW1kPRsGR39YRvmrz39Olm9Ddbjx2DhUDoKKe6KYskZPrWHat_AW4uvjM70ij06_F4r7TSflyKt0gEMdx3nK7YZ0w0tqM9zTsEgfQvY7PWcvjaaMzRzbUN11F6b6QL71Siu_U-KhfA"
-              />
-              <script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script>
-              <script>
-                grecaptcha.ready(function () {
-                  grecaptcha
-                    .execute("6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-", {
-                      action: "submit",
-                    })
-                    .then(function (token) {
-                      document.getElementById(
-                        "a4a5ddc4819e4e09ab773f66c3c71a2d"
-                      ).value = token;
-                    });
-                });
-              </script>
-            </form>
           </div>
         </div>
       </section>
       <footer class="footer bg-primary p-4">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Về chúng tôi</h2>
               <span class="sp_footer"></span>
               <div class="footer-logo">
                 <a class="logo" href="//soccerbeck.vn">
                   <img
                     class="lazyload img-responsive loaded"
-                    src="./img/348358245_266753209099574_7887288500838937974_n.png"
+                    src="./img/logo-removebg-preview.png"
                     data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/logo_footer.png?1685587533867"
                     alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
                     data-was-processed="true"
@@ -390,7 +282,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Thông tin</h2>
               <span class="sp_footer"></span>
               <ul class="links">
@@ -411,7 +303,7 @@
                 <li><a href="/chinh-sach">Chính sách bảo mật</a></li>
               </ul>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Bản đồ</h2>
               <span class="sp_footer"></span>
 
@@ -429,7 +321,7 @@
                 />
               </a>
             </div>
-            <div class="col-md-6 col-lg-3 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
               <h2 class="h2_footer">Liên hệ</h2>
               <span class="sp_footer"></span>
               <div class="contacts-info">

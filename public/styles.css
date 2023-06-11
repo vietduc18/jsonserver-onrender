@@ -46,6 +46,21 @@
   padding-left: 10px;
 }
 
+.counter {
+  position: absolute;
+  top: 4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  background: #dc3545;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  display: inline-block;
+}
+
 .section-product {
   padding-top: 40px;
   padding-bottom: 40px;

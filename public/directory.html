@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="directory.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>DUC SPORT</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./img/logo-removebg-preview.png"
+              alt="Logo"
+              width="100"
+              height="64"
+              class="d-inline-block align-text-top img-fluid"
+              style="width: 50px"
+          /></a>
+          <button
+            class="navbar-toggler border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >TRANG CHỦ</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  GIÀY BÓNG ĐÁ
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">SÂN NHÂN TẠO</a></li>
+                  <li><a class="dropdown-item" href="#">SÂN TỰ NHIÊN</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">SÂN FUTSAL</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  THƯƠNG HIỆU
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">NIKE</a></li>
+                  <li><a class="dropdown-item" href="#">ADIDAS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">PUMA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">MIZUNO</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">KAMITO</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">LIÊN HỆ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">TƯ VẤN</a>
+              </li>
+            </ul>
+            <form class="form-search d-flex" role="search">
+              <input
+                class="form-input"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Search"
+              />
+              <i class="bi bi-search"></i>
+            </form>
+          </div>
+          <a class="navbar-user d-none d-md-block" href="login.html"
+            ><i class="bi bi-person-circle"></i
+          ></a>
+          <a
+            class="navbar-cart d-none d-md-block position-relative"
+            href="cart.html"
+            ><i class="bi bi-cart4"></i> <span class="counter">0</span></a
+          >
+        </div>
+      </nav>
+      <section class="section section-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <ul class="breacrumb">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <span class="sp-ar">|</span>
+                    <li><span>tên sản phẩm</span></li>
+                    <span class="sp-ar">|</span>
+                    <li><span>Giày đá bóng nhân tạo chính hãng</span></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                  <div
+                    id="sns_navigation"
+                    class="hidden-xs block block_navigation"
+                  >
+                    <div class="block-title">Danh mục sản phẩm</div>
+                    <div class="block_content">
+                      <ul class="nav navs sidebar menu" id="cssmenu">
+                        <li class="item first">
+                          <a href="#">
+                            <span>TẤT CẢ SẢN PHẨM</span>
+                          </a>
+                        </li>
+
+                        <li class="item active">
+                          <a href="#">
+                            <span>GIÀY CỎ TỰ NHIÊN</span>
+                          </a>
+                        </li>
+
+                        <li class="item">
+                          <a href="#">
+                            <span>GIÀY CỎ NHÂN TẠO</span>
+                          </a>
+                        </li>
+
+                        <li class="item">
+                          <a href="#">
+                            <span>GIÀY FUTSAL</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="collection_sidebar">
+                    <div class="sidebar-widgets-wrap">
+                      <div class="ega-filter" data-style="ega-filter">
+                        <div class="ega-filter__heading is-show">
+                          <h4 class="ega-filter__title ega-h6 ega-m--0">
+                            BỘ LỌC<svg class="ega-ic-close">
+                              <use xlink:href="#ega-ic-close"></use>
+                            </svg>
+                          </h4>
+                        </div>
+
+                        <div class="ega-filter__body">
+                          <div class="ega-filter__item ega-filter__price">
+                            <h4 class="ega-filter__title ega-h6 ega-m--0">
+                              GIÁ
+                            </h4>
+                            <ul class="ega-ul ega-m--0">
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="(price:product>=0)"
+                                    data-filter-type="price"
+                                  />
+                                  <span>Tất cả</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="(price:product<=1000000)"
+                                    data-filter-type="price"
+                                  />
+                                  <span>Dưới 1,000,000₫</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="((price:product>=1000000)&amp;&amp;(price:product<=2000000))"
+                                    data-filter-type="price"
+                                  />
+                                  <span>1,000,000₫- 2,000,000₫</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="((price:product>=2000000)&amp;&amp;(price:product<=3000000))"
+                                    data-filter-type="price"
+                                  />
+                                  <span>2,000,000₫- 3,000,000₫</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="((price:product>=3000000)&amp;&amp;(price:product<=4000000))"
+                                    data-filter-type="price"
+                                  />
+                                  <span>3,000,000₫- 4,000,000₫</span>
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input
+                                    type="radio"
+                                    name="price-filter"
+                                    data-role="filter"
+                                    data-filter-query="(price:product>=4000000)"
+                                    data-filter-type="price"
+                                  />
+                                  <span>Trên 4,000,000₫</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="ega-filter__item">
+                            <h4 class="ega-filter__title ega-h6 ega-m--0">
+                              THƯƠNG HIỆU
+                            </h4>
+                            <ul class="ega-ul ega-m--0">
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(vendor:product=ADIDAS)"
+                                    data-filter-type="vendor"
+                                  />
+                                  <span>ADIDAS</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(vendor:product=PUMA)"
+                                    data-filter-type="vendor"
+                                  />
+                                  <span>PUMA</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(vendor:product=MIZUNO)"
+                                    data-filter-type="vendor"
+                                  />
+                                  <span>MIZUNO</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(vendor:product=NIKE)"
+                                    data-filter-type="vendor"
+                                  />
+                                  <span>NIKE</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(vendor:product=KAMITO)"
+                                    data-filter-type="vendor"
+                                  />
+                                  <span>KAMITO</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="ega-filter__item">
+                            <h4 class="ega-filter__title ega-h6 ega-m--0">
+                              SIZE
+                            </h4>
+                            <ul class="ega-ul ega-m--0">
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=37.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>37.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=38)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>38</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 38 2/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 38 2/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 38.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 38.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=39)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>39</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 39 1/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 39 1/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 39.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 39.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 40)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 40</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 40.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 40.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 40 2/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 40 2/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 41)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 41</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 41 1/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 41 1/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 41.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 41.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 42)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 42</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 42 2/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 42 2/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 42.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 42.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 43)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 43</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 43 1/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 43 1/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 44)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 44</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 44.5)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 44.5</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 44 2/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 44 2/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 45)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 45</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 45 1/3)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 45 1/3</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= 46)"
+                                    data-filter-type="type"
+                                  />
+                                  <span> 46</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=S)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>S</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=M)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>M</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=L)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>L</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=XL)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>XL</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product=XXL)"
+                                    data-filter-type="type"
+                                  />
+                                  <span>XXL</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= L-LL [26.0cm-29.0cm])"
+                                    data-filter-type="type"
+                                  />
+                                  <span> L-LL [26.0cm-29.0cm]</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= S-M [22.5cm-25. 5cm])"
+                                    data-filter-type="type"
+                                  />
+                                  <span> S-M [22.5cm-25. 5cm]</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= S [23cm-25cm])"
+                                    data-filter-type="type"
+                                  />
+                                  <span> S [23cm-25cm]</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= M [25cm-27cm])"
+                                    data-filter-type="type"
+                                  />
+                                  <span> M [25cm-27cm]</span>
+                                </label>
+                              </li>
+
+                              <li>
+                                <label>
+                                  <input
+                                    type="checkbox"
+                                    data-role="filter"
+                                    data-filter-query="(variantonhand:product= L [27CM-29cm])"
+                                    data-filter-type="type"
+                                  />
+                                  <span> L [27CM-29cm]</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <!-- BEGIN: Tag_Custom_1 filter -->
+
+                          <!-- END: Tag_Custom_7 filter -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                  <img
+                    src="./img/col_all_banner.webp"
+                    alt="col-banner"
+                    class="mw-100 mb-4"
+                  />
+                  <div id="sort-wrap">
+                    <div class="sort-left count-products">
+                      <h1 id="ega-coll-name">TẤT CẢ SẢN PHẨM</h1>
+                    </div>
+                    <div class="sort-right ega-text--right">
+                      <div class="ega-sortby">
+                        <div>Sắp xếp theo:</div>
+                        <div class="sortby__wrap">
+                          <select data-role="sortby">
+                            <option value="manual">Sản phẩm nổi bật</option>
+                            <option
+                              value="price-ascending"
+                              data-filter="&amp;sortby=(price:product=asc)"
+                            >
+                              Giá: Tăng dần
+                            </option>
+                            <option
+                              value="price-descending"
+                              data-filter="&amp;sortby=(price:product=desc)"
+                            >
+                              Giá: Giảm dần
+                            </option>
+                            <option
+                              value="title-ascending"
+                              data-filter="&amp;sortby=(title:product=asc)"
+                            >
+                              Tên: A-Z
+                            </option>
+                            <option
+                              value="title-descending"
+                              data-filter="&amp;sortby=(price:product=desc)"
+                            >
+                              Tên: Z-A
+                            </option>
+                            <option
+                              value="created-ascending"
+                              data-filter="&amp;sortby=(updated_at:product=desc)"
+                            >
+                              Cũ nhất
+                            </option>
+                            <option
+                              value="created-descending"
+                              data-filter="&amp;sortby=(updated_at:product=asc)"
+                            >
+                              Mới nhất
+                            </option>
+                            <option
+                              value="best-selling"
+                              data-filter="&amp;sortby=(sold_quantity:product=desc)"
+                            >
+                              Bán chạy nhất
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="filter-on-mb">
+                        <div class="filter-open">
+                          <span>Lọc sản phẩm</span
+                          ><svg class="ega-ic-angle-down">
+                            <use xlink:href="#ega-ic-angle-down"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="row gy-4">
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr9.webp"
+                              alt="product1"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+
+                            <h5 class="product-title fw-normal p-2">
+                              Nike Air Zoom Mercurial Vapor 15 Elite AG-PRO XXV
+                              - Metallic Silver/Volt/Black
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr2.webp"
+                              alt="product2"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              adidas X Speedportal .3 TF L10NEL M35SI - Solar
+                              Orange/Mint Rush/Core Black LIMITED EDITION
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr3.webp"
+                              alt="product3"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Nike React Phantom GX Pro TF Blast - Baltic
+                              Blue/Pink Blast/White/Laser Blue
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr4.webp"
+                              alt="product4"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-20%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Mizuno Alpha Pro AS TF - Black/Purple/Red
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr5.webp"
+                              alt="product5"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Future Ultimate Cage TT Pursuit - Fast
+                              Yellow/PUMA Black/Electric Peppermint
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr6.webp"
+                              alt="product6"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Ultra Ultimate Cage TT Supercharge - Ultra
+                              Orange/PUMA White/Blue Glimmer
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr7.webp"
+                              alt="product7"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Nike Phantom GX Elite FG Luminous - Barely
+                              Volt/Gridiron/Barely Grape
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr8.webp"
+                              alt="product8"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Mizuno Morelia Neo III Beta Elite FG Azure Blue -
+                              Blue/White/Copper
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr9.webp"
+                              alt="product1"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+
+                            <h5 class="product-title fw-normal p-2">
+                              Nike Air Zoom Mercurial Vapor 15 Elite AG-PRO XXV
+                              - Metallic Silver/Volt/Black
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr2.webp"
+                              alt="product2"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              adidas X Speedportal .3 TF L10NEL M35SI - Solar
+                              Orange/Mint Rush/Core Black LIMITED EDITION
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr3.webp"
+                              alt="product3"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Nike React Phantom GX Pro TF Blast - Baltic
+                              Blue/Pink Blast/White/Laser Blue
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr4.webp"
+                              alt="product4"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-20%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Mizuno Alpha Pro AS TF - Black/Purple/Red
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr4.webp"
+                              alt="product4"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-20%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Mizuno Alpha Pro AS TF - Black/Purple/Red
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr5.webp"
+                              alt="product5"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Future Ultimate Cage TT Pursuit - Fast
+                              Yellow/PUMA Black/Electric Peppermint
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr6.webp"
+                              alt="product6"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Ultra Ultimate Cage TT Supercharge - Ultra
+                              Orange/PUMA White/Blue Glimmer
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr7.webp"
+                              alt="product7"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Nike Phantom GX Elite FG Luminous - Barely
+                              Volt/Gridiron/Barely Grape
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr4.webp"
+                              alt="product4"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-20%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Mizuno Alpha Pro AS TF - Black/Purple/Red
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr5.webp"
+                              alt="product5"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Future Ultimate Cage TT Pursuit - Fast
+                              Yellow/PUMA Black/Electric Peppermint
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr6.webp"
+                              alt="product6"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <span
+                              class="product-episode position-absolute top-0 start-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >HOT</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              PUMA Ultra Ultimate Cage TT Supercharge - Ultra
+                              Orange/PUMA White/Blue Glimmer
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-4 col-xl-3">
+                        <article class="product position-relative">
+                          <a
+                            href="detail.html"
+                            class="product-link d-block text-center text-decoration-none text-black"
+                          >
+                            <img
+                              class="product-img mw-100"
+                              src="./img/pr7.webp"
+                              alt="product7"
+                            />
+                            <span
+                              class="product-episode position-absolute top-0 end-0 bg-danger text-light fs-6 p-1 shadow-sm"
+                              >-15%</span
+                            >
+                            <h5 class="product-title fw-normal p-2">
+                              Nike Phantom GX Elite FG Luminous - Barely
+                              Volt/Gridiron/Barely Grape
+                            </h5>
+                            <div class="price">
+                              <ins class="text-decoration-none text-danger"
+                                >2.990.000đ</ins
+                              >
+                              <del>3.600.000đ</del>
+                            </div>
+                          </a>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="pagination" class="ega-text--center">
+                    <div class="ega-d--i-block">
+                      <div class="ega-pagi">
+                        <a
+                          class="ega-pagi__item ega-pagi__prev"
+                          href="/collections/shop?page=1"
+                          data-page-id="1"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chevron-left"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                            />
+                          </svg>
+                        </a>
+                        <span class="ega-pagi__item current" data-page-id="1">
+                          1
+                        </span>
+                        <a
+                          class="ega-pagi__item"
+                          href="/collections/shop?page=2"
+                          data-page-id="2"
+                          >2</a
+                        >
+                        <a
+                          class="ega-pagi__item"
+                          href="/collections/shop?page=3"
+                          data-page-id="3"
+                          >3</a
+                        >
+                        <span class="ega-pagi__item" data-page-id="…"> … </span>
+                        <a
+                          class="ega-pagi__item"
+                          href="/collections/shop?page=9"
+                          data-page-id="9"
+                          >6</a
+                        >
+
+                        <a
+                          class="ega-pagi__item ega-pagi__next"
+                          href="/collections/shop?page=2"
+                          data-page-id="2"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chevron-right"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer bg-primary p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <h2 class="h2_footer">Về chúng tôi</h2>
+              <span class="sp_footer"></span>
+              <div class="footer-logo">
+                <a class="logo" href="//soccerbeck.vn">
+                  <img
+                    class="lazyload img-responsive loaded"
+                    src="./img/logo-removebg-preview.png"
+                    data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/logo_footer.png?1685587533867"
+                    alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                    data-was-processed="true"
+                  />
+                </a>
+              </div>
+              <div class="social pull-right">
+                <ul class="link p-0">
+                  <li class="fb pull-left">
+                    <a
+                      href="https://www.facebook.com/becksport.shop/"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/facebookico.png?1685587533867"
+                        alt="Facebook"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="tw pull-left">
+                    <a href="https://shopee.vn/soccerbeck" target="_blank">
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/shoppeeico.png?1685587533867"
+                        alt="Shopee"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="youtube pull-left">
+                    <a
+                      href="https://www.tiktok.com/@giaybongda.becksport"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/tiktokico.png?1685587533867"
+                        alt="Tiktok"
+                      />
+                    </a>
+                  </li>
+
+                  <li class="youtube pull-left">
+                    <a
+                      href="http://www.zalo.me/2819253689128987657"
+                      target="_blank"
+                    >
+                      <img
+                        src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/zaloico.png?1685587533867"
+                        alt="Tiktok"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <a href="http://online.gov.vn/Home/WebDetails/67773">
+                  <img
+                    style="margin-top: 10px"
+                    class="lazyload img-responsive loaded"
+                    src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/bct.png?1685587533867"
+                    data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/bct.png?1685587533867"
+                    alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                    data-was-processed="true"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <h2 class="h2_footer">Thông tin</h2>
+              <span class="sp_footer"></span>
+              <ul class="links">
+                <li>
+                  <a href="/chinh-sach-thanh-toan">Chính sách thanh toán</a>
+                </li>
+
+                <li>
+                  <a href="/chinh-sach-van-chuyen-giao-nhan"
+                    >Chính sách giao nhận</a
+                  >
+                </li>
+
+                <li><a href="/doi-tra-va-bao-hanh">Chính sách đổi trả</a></li>
+
+                <li><a href="/bao-hanh">Chính sách bảo hành</a></li>
+
+                <li><a href="/chinh-sach">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <h2 class="h2_footer">Bản đồ</h2>
+              <span class="sp_footer"></span>
+
+              <a
+                style="display: block"
+                target="_blank"
+                href="https://g.page/becksport-shop"
+              >
+                <img
+                  class="lazyload img-responsive loaded"
+                  src="./img/bando.jpg"
+                  data-src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/img-bando.jpg?1685587533867"
+                  alt="SOCCER BECK - GIÀY BÓNG ĐÁ"
+                  data-was-processed="true"
+                />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <h2 class="h2_footer">Liên hệ</h2>
+              <span class="sp_footer"></span>
+              <div class="contacts-info">
+                <address>
+                  <span style="color: #fff" class="bi bi-geo-alt-fill"></span>
+                  &nbsp;HÀ NỘI
+                </address>
+                <div class="phone-footer">
+                  <span style="color: #fff" class="bi bi-telephone"></span>
+                  &nbsp;Hotline free: 1900 8198
+                </div>
+                <div class="phone-footer">
+                  <img
+                    src="//bizweb.dktcdn.net/100/108/842/themes/775959/assets/zalo.png?1685587533867"
+                  />
+                  &nbsp;Zalo bán lẻ: 0123456789
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="detail.js"></script>
+  </body>
+</html>

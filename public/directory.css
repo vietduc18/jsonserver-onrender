@@ -1,0 +1,252 @@
+.block .block-title {
+  color: #555555;
+  font-size: 150%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 17px 0px 17px;
+  margin: 0 15px;
+  position: relative;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.block .block_content {
+  padding: 10px 15px 20px;
+}
+
+#cssmenu li {
+  width: 100%;
+  padding: 4px 0 3px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+#cssmenu li a {
+  position: relative;
+  padding: 7px 0px 7px 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#cssmenu li a:hover {
+  color: #0d6efd;
+}
+
+.layered_filter {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+p#filter-heading {
+  text-transform: uppercase;
+  color: #111;
+  font-weight: bold;
+  margin: 0;
+}
+
+ul#filter-category li {
+  line-height: 23px;
+  list-style-type: none;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.ega-filter__heading {
+  display: none;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ega-filter__title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #0e1c22;
+  position: relative;
+  line-height: inherit;
+  cursor: pointer;
+  padding-left: 16px;
+}
+
+.ega-filter__item ul {
+  padding-top: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ega-filter__item ul li {
+  margin-bottom: 12px;
+  color: rgba(14, 28, 34, 0.7);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ega-filter__item ul li label input {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid rgba(14, 28, 34, 0.4);
+  cursor: pointer;
+}
+
+.ega-filter__item ul li label span {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+#sort-wrap {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#sort-wrap .sort-left {
+  width: calc(100% - 321px);
+}
+
+#ega-coll-name {
+  font-weight: normal;
+  font-size: 48px;
+  color: #000;
+  margin: 0;
+}
+
+#sort-wrap .sort-right {
+  width: 305px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.ega-text--right {
+  text-align: right !important;
+}
+
+#sort-wrap .sort-right .ega-sortby {
+  display: flex;
+  align-items: center;
+}
+
+#sort-wrap .sort-right .ega-sortby .sortby__wrap {
+  position: relative;
+}
+
+#sort-wrap .sort-right .ega-sortby select {
+  width: 190px;
+  height: 100%;
+  margin-left: 16px;
+  border: 1px solid #0e1c22;
+  padding: 12px 16px;
+  color: #0e1c22;
+  font-size: 16px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#sort-wrap .sort-right .ega-sortby .sortby__wrap svg {
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-weight: bold;
+  z-index: -1;
+}
+
+.filter-on-mb {
+  display: none;
+}
+
+#sort-wrap .sort-right .filter-on-mb .filter-open {
+  position: relative;
+  height: 100%;
+  margin-left: 16px;
+  border: 1px solid #0e1c22;
+  padding: 12px 16px;
+  color: #0e1c22;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+}
+
+#sort-wrap .sort-right .filter-on-mb .filter-open span {
+  margin-right: 9px;
+}
+
+#sort-wrap .sort-right .filter-on-mb .filter-open svg {
+  position: absolute;
+  font-size: 14px;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-weight: bold;
+  z-index: -1;
+}
+
+.ega-text--center {
+  text-align: center !important;
+}
+
+.ega-d--i-block {
+  display: inline-block !important;
+}
+
+.ega-pagi {
+  display: flex;
+}
+
+.ega-pagi__item.current {
+  background: none;
+  color: #0e1c22;
+  opacity: 1;
+}
+
+.ega-pagi__item + .ega-pagi__item {
+  margin-left: 24px;
+}
+
+.ega-pagi__item {
+  border: none;
+  font-size: 24px;
+  color: #0e1c22;
+  opacity: 0.3;
+  padding: 0;
+  margin: 0;
+}
+
+.ega-pagi__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0.25rem;
+  text-align: center;
+  min-width: 2.25rem;
+  border: 1px solid #dbdbdb;
+  font-size: 1rem;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.ega-pagi__item.ega-pagi__prev,
+.ega-pagi__item.ega-pagi__next {
+  opacity: 1;
+}

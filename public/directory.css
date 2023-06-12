@@ -115,10 +115,6 @@ label {
   justify-content: space-between;
 }
 
-#sort-wrap .sort-left {
-  width: calc(100% - 321px);
-}
-
 #ega-coll-name {
   font-weight: normal;
   font-size: 48px;

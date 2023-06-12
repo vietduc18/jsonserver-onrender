@@ -123,7 +123,6 @@ label {
 }
 
 #sort-wrap .sort-right {
-  width: 305px;
   display: flex;
   align-items: flex-end;
   flex-direction: row-reverse;
@@ -245,8 +244,4 @@ label {
 .ega-pagi__item.ega-pagi__prev,
 .ega-pagi__item.ega-pagi__next {
   opacity: 1;
-}
-
-.d-none {
-  display: none;
 }

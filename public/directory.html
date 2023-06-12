@@ -138,7 +138,7 @@
                     <li><span>Giày đá bóng nhân tạo chính hãng</span></li>
                   </ul>
                 </div>
-                <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="col-md-3 col-sm-12 col-xs-12 d-block d-none">
                   <div
                     id="sns_navigation"
                     class="hidden-xs block block_navigation"
@@ -761,12 +761,12 @@
                     class="mw-100 mb-4"
                   />
                   <div id="sort-wrap">
-                    <div class="sort-left count-products">
+                    <div class="sort-left count-products d-block d-none">
                       <h1 id="ega-coll-name">TẤT CẢ SẢN PHẨM</h1>
                     </div>
                     <div class="sort-right ega-text--right">
                       <div class="ega-sortby">
-                        <div>Sắp xếp theo:</div>
+                        <div class="d-block d-none">Sắp xếp theo:</div>
                         <div class="sortby__wrap">
                           <select data-role="sortby">
                             <option value="manual">Sản phẩm nổi bật</option>
@@ -816,11 +816,21 @@
                         </div>
                       </div>
 
-                      <div class="filter-on-mb">
+                      <div class="filter-on-mb d-block">
                         <div class="filter-open">
                           <span>Lọc sản phẩm</span
-                          ><svg class="ega-ic-angle-down">
-                            <use xlink:href="#ega-ic-angle-down"></use>
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-chevron-down"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            />
                           </svg>
                         </div>
                       </div>

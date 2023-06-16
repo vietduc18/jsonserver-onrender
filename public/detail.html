@@ -257,9 +257,53 @@
                         <span class="size-item">42</span>
                       </div>
                     </div>
-                    <div class="btn-size">
-                      <a href="">Hướng dẫn chọn size</a>
+
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Hướng dẫn chọn size
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="staticBackdrop"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="staticBackdropLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="staticBackdropLabel"
+                            >
+                              Cách chọn size
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <img
+                              src="./img/huongdanchonsize.webp"
+                              style="max-width: 100%"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="soluong">
                       <div class="title">Chọn số lượng</div>
                       <button class="btn btn-down">-</button>

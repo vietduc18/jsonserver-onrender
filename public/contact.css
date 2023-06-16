@@ -1,0 +1,93 @@
+.contact-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 44px 48px;
+  border: 1px solid #e1e3e8;
+}
+
+.contac-info--item {
+  width: 25%;
+}
+
+.contact-title {
+  font-size: 20px;
+  color: #0e1c22;
+  line-height: 32px;
+}
+
+.contact-ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+
+.conatact-li {
+  padding-bottom: 10px;
+}
+
+.conatact-li i {
+  padding-right: 10px;
+}
+
+.contact-submit {
+  margin-bottom: 30px;
+  padding: 44px 48px;
+  border: 1px solid #e1e3e8;
+}
+
+.contact-submit form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col--half {
+  width: 45%;
+}
+
+.col--full {
+  width: 100%;
+  margin-top: 49px;
+  margin-bottom: 32px;
+}
+
+.contact-submit form label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #0e1c22;
+  opacity: 0.6;
+  margin-bottom: 14px;
+  display: block;
+  font-weight: 700;
+}
+
+.ega-form__control {
+  width: 100%;
+  border: 1px solid #eee;
+  vertical-align: top;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+.contact-submit form .ega-form__control {
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(14, 28, 34, 0.4);
+  padding: 0 0 8px 0;
+  border-radius: 0;
+}
+
+.btn-submit {
+  border: 1px solid #333;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+}
+
+.btn-submit:hover {
+  color: #fff;
+  background-color: #0e1c22;
+}

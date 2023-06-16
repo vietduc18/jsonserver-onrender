@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="contact.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,7 +37,7 @@
   </head>
   <body>
     <div class="wrapper">
-       <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
           <a class="navbar-brand" href="index.html"
             ><img
@@ -122,7 +123,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">LIÊN HỆ</a>
+                <a class="nav-link">LIÊN HỆ</a>
               </li>
             </ul>
             <form class="form-search d-flex" role="search">
@@ -135,11 +136,11 @@
               <i class="bi bi-search"></i>
             </form>
           </div>
-          <a class="navbar-user d-none d-xl-block" href="login.html"
+          <a class="navbar-user d-none d-md-block" href="login.html"
             ><i class="bi bi-person-circle"></i
           ></a>
           <a
-            class="navbar-cart d-none d-xl-block position-relative"
+            class="navbar-cart d-none d-md-block position-relative"
             href="cart.html"
             ><i class="bi bi-cart4"></i> <span class="counter">0</span></a
           >
@@ -148,72 +149,69 @@
       <section id="maincontent" class="clearfix container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="layout-page">
           <span class="header-contact header-page clearfix">
-            <h1>Đăng nhập</h1>
+            <h1>LIÊN HỆ</h1>
           </span>
 
-          <div id="customer-login">
-            <div id="login" class="userbox">
-              <div class="accounttype">
-                <h2 class="title"></h2>
-              </div>
-              <form
-                accept-charset="UTF-8"
-                action="/account/login"
-                id="customer_login"
-                method="post"
-              >
-                <input name="form_type" type="hidden" value="customer_login" />
-                <input name="utf8" type="hidden" value="✓" />
-
-                <div class="clearfix large_form">
-                  <label for="customer_email" class="icon-field"
-                    ><i class="bi bi-envelope"></i
-                  ></label>
-                  <input
-                    required=""
-                    type="email"
-                    value=""
-                    name="customer[email]"
-                    id="customer_email"
-                    placeholder="Email"
-                    class="text"
-                  />
-                </div>
-
-                <div class="clearfix large_form">
-                  <label for="customer_password" class="icon-field"
-                    ><i class="bi bi-lock"></i>
-                  </label>
-                  <input
-                    required=""
-                    type="password"
-                    value=""
-                    name="customer[password]"
-                    id="customer_password"
-                    placeholder="Mật khẩu"
-                    class="text"
-                    size="16"
-                  />
-                </div>
-
-                <div class="action_bottom">
-                  <input class="btn-signin" type="submit" value="Đăng nhập" />
-                </div>
-                <div class="req_pass">
-                  <a href="#">Quên mật khẩu?</a>
-
-                  hoặc <a href="singup.html" title="Đăng ký">Đăng ký</a>
-                </div>
-
-                <input
-                  id="ecb71b857e264b70af8ad1f0ed11ce9f"
-                  name="g-recaptcha-response"
-                  type="hidden"
-                  value="03AL8dmw8p-ySZxiuNQ5ndHm3KQzvSyOfci3j1tcf2gkE9BGYmRCjfzTO6eC1Nn6_BtIHc5N1pg8PnPaKScswm9dSJzky7aJ-AidpBku1s5VxP0iqaWhhAksPTX2HOexY0Wsb1iQuKiFgGPfE4VtmUyke9YlQz34tpknz5s_fiEiCmUu94D779Pusi2C7_7dMmv5ysq0ijiInsoqq80VdHPZGk0cGRitQD2pLlVN2owe34TKpwKclalFY_T1H9g_V85jEtFNzFkbAfx0RIu_OwacHZtmEQO5p0FxS4Z5u5NTQs3GS2pWPGru_g87AM3fhgbjbdkY0WMHmahDnsUToXYaAIr83H8YbiLo9izMLFEvtKHK3gmkYkN-mr0MR5APWdoQPyzG--PeeZb_viLaG4fbDTPPcWicESZxVhrk8YqZTv6AdkgPlP7cWw2P6dKflBatsFqicbPWESbg0pQO3imEZUz1gJnSS9WKgM_hO5nGSzh5SpLRFTuFPKpQ4MjmUIK0Fo7UxmUcDPH6mziPrO4Ckx9nODT7eN2g"
-                />
-              </form>
-              <h1 class="Success">Bạn đã đăng nhập thành công</h1>
+          <div class="contact-info">
+            <div class="contac-info--item">
+              <div class="contact-title">Hotline</div>
+              <p class="contact-phone">012 3456 789</p>
             </div>
+            <div class="contac-info--item">
+              <div class="contact-title">Mạng xã hội</div>
+              <ul class="contact-ul">
+                <li class="conatact-li">
+                  <i class="bi bi-facebook"></i>
+                  DUC Sport
+                </li>
+                <li class="conatact-li">
+                  <i class="bi bi-instagram"></i>
+                  DUC Sport
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-submit">
+            <form action="" class="contact-form">
+              <div class="ega-form__group col--half">
+                <label>Tên của bạn (*)</label>
+                <input
+                  type="text"
+                  class="ega-form__control ega-required"
+                  name="contact[name]"
+                  placeholder="Tên của bạn"
+                />
+                <div class="ega-form__mess" style="display: none">
+                  Bạn chưa nhập thông tin này!
+                </div>
+              </div>
+              <div class="ega-form__group col--half">
+                <label>Email (*)</label>
+                <input
+                  type="email"
+                  class="ega-form__control ega-required"
+                  name="contact[email]"
+                  placeholder="Email của bạn"
+                />
+                <div class="ega-form__mess" style="display: none">
+                  Email không đúng định dạng!
+                </div>
+              </div>
+              <div class="ega-form__group col--full">
+                <label>Nội dung (*)</label>
+                <textarea
+                  class="ega-form__control ega-required"
+                  name="contact[body]"
+                  rows="3"
+                  placeholder="Nhập nội dung"
+                ></textarea>
+                <div class="ega-form__mess" style="display: none">
+                  Bạn chưa nhập thông tin này!
+                </div>
+              </div>
+            </form>
+            <div class="btn-submit">GỬI</div>
           </div>
         </div>
       </section>

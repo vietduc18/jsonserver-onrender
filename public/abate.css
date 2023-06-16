@@ -59,6 +59,14 @@
   word-break: normal;
 }
 
+.field-two-thirds {
+  width: 67% !important;
+}
+
+.field-two-third {
+  width: 30% !important;
+}
+
 form#form_update_shipping_method {
   position: relative;
 }
@@ -132,16 +140,6 @@ form#form_update_shipping_method {
 
 .btn .btn-content:hover {
   opacity: 0.8;
-}
-
-.main {
-  padding-top: 60px;
-  padding-right: 60px !important;
-}
-
-.sidebar {
-  padding-top: 60px;
-  padding-left: 40px !important;
 }
 
 .sidebar {

@@ -59,14 +59,6 @@
   word-break: normal;
 }
 
-.field-two-thirds {
-  width: 67% !important;
-}
-
-.field-two-third {
-  width: 30% !important;
-}
-
 form#form_update_shipping_method {
   position: relative;
 }

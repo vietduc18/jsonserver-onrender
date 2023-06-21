@@ -1,3 +1,7 @@
 .shopping-cart-empty {
   text-align: center;
 }
+
+.section {
+  flex: 1;
+}

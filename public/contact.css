@@ -25,6 +25,11 @@
   padding-bottom: 10px;
 }
 
+.conatact-li a {
+  color: #0e1c22;
+  text-decoration: none;
+}
+
 .conatact-li i {
   padding-right: 10px;
 }

@@ -310,7 +310,37 @@
                       <div class="buynow">
                         <a href="abate.html" class="text-light">MUA NGAY</a>
                       </div>
-                      <div class="addtocart">Thêm vào giỏ hàng</div>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="liveToastBtn"
+                      >
+                        THÊM VÀO GIỎ HÀNG
+                      </button>
+
+                      <div
+                        class="toast-container position-fixed bottom-0 end-0 p-3"
+                      >
+                        <div
+                          id="liveToast"
+                          class="toast align-items-center text-bg-primary"
+                          role="alert"
+                          aria-live="assertive"
+                          aria-atomic="true"
+                        >
+                          <div class="d-flex">
+                            <div class="toast-body">
+                              Bạn đã thêm vào gỏ hàng thành công
+                            </div>
+                            <button
+                              type="button"
+                              class="btn-close me-2 m-auto"
+                              data-bs-dismiss="toast"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="tag">#tags:</div>
                     <div class="tag-list">

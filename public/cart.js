@@ -69,7 +69,7 @@ function updateCartInfo() {
     const total = cartItem.querySelector(".cart-item-price");
 
     // Cập nhật giá tiền cho từng item
-    total.textContent = price * quantity;
+    // total.textContent = price * quantity;
 
     totalQuantity += quantity;
     totalPrice += price * quantity;
@@ -77,7 +77,7 @@ function updateCartInfo() {
     downButton.disabled = quantity == 1;
   });
 
-  totalPriceElement.textContent = totalPrice;
+  // totalPriceElement.textContent = totalPrice;
   totalQuantityElement.textContent = totalQuantity;
 }
 
